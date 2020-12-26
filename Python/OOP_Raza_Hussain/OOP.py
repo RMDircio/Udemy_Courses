@@ -145,9 +145,29 @@ print(greg.legs)
 
 hank = Hawk()
 print(hank.legs)
+print('----------------------------')
 
 
+#---------------------------------------#
+##        Levels of Inheritance        ##
+##     and Method Resolution Order     ##
+#---------------------------------------# 
 
+# syntax for multiple inheritence
+
+class Inheritance1:
+    pass
+
+class Inheritance2:
+    pass
+
+class MultiInheritance(Inheritance1, Inheritance2):
+    pass
+
+# example
+
+class Both(Bird, Penguin): # order is from left to right
+    pass
 
 
 
