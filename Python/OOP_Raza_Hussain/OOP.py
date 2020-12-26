@@ -153,7 +153,7 @@ print('----------------------------')
 ##     and Method Resolution Order     ##
 #---------------------------------------# 
 
-# syntax for multiple inheritence
+# syntax for multiple inheritance
 
 class Inheritance1:
     pass
@@ -166,15 +166,73 @@ class MultiInheritance(Inheritance1, Inheritance2):
 
 # example
 
-class Both(Bird, Penguin): # order is from left to right
+# class Both(Bird, Penguin): # order is from left to right
     pass
 
-
-
-
-
-
-
-
-
 print('--------------------------------------------')
+
+
+
+#---------------------------------------#
+##        Operator Overloading         ##
+#---------------------------------------# 
+
+''' Some operators have different meanings depending on the context when used '''
+
+# string
+a = 'He'
+b = 'llo'
+c = a + b
+print(c)
+
+# Integers
+d = 5
+e = 6
+f = d + e
+print(f)
+
+# lists
+Students = ['John', 8, 'Ami', 5, 'Ali', 4]
+New_Studnets = ['Joseph', 8, 'Alex', 7]
+Total_Students = Students + New_Studnets
+print(Total_Students)
+
+# define a class
+class Point:
+    def __init__(self, x=0, y=0):
+        self.x = x
+        self.y = y
+
+P1 = Point(2,3)
+print(P1) # this prints an object - a point in memory
+
+# add the str and add function to the class
+class Point_Update:
+    def __init__(self, x=0, y=0):
+        self.x = x
+        self.y = y
+    
+    def __str__(self):
+        return f'{self.x}, {self.y}'
+    
+    def __add__(self, other):
+        x = self.x + other.x
+        y = self.y + other.y
+        return Point_Update(x,y)
+
+P2 = Point_Update(7,9)
+P3 = Point_Update(7,9)
+print(P2+P3) # add the two set of points together
+
+'''
+                Some of the Common Operator Overloading Special Functions in Python
+    -------------------------------------------------------------------------
+    |       Operator         |       Expression      |       Interally      |
+    -------------------------------------------------------------------------
+    |       Addition        -->     p1 + p2         -->     p1.__add__(p2)    
+    |       Subtraction     -->     p1 - p2         -->     p1.__sub__(p2)   
+    |       Multiplication  -->     p1 * p2         -->     p1.__mul__(p2)   
+    |       Power           -->     p1 ** p2        -->     p1.__pow__(p2)   
+    |       Division        -->     p1 / p2         -->     p1.__truediv__(p2)   
+    -------------------------------------------------------------------------
+
