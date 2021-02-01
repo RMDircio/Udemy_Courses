@@ -33,5 +33,6 @@ an oop course
 <br> [HTML Reference](https://developer.mozilla.org/en-US/docs/Web/HTML)
 <br> [W3Schools - HTML Attributes]( http://www.w3schools.com/html/html_attributes.asp)
 <br> [Mozilla - HTML Attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes)
+<br> [Flask Beginner Projects](https://www.pythonistaplanet.com/wp-content/uploads/2020/03/flask-projects.jpg)
 <br>Instructor: Jose Portilla
 <br>_Create awesome websites using the powerful Flask framework for Python!_
