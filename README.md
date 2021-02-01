@@ -13,8 +13,8 @@ To clone this repo use:<br> ```git clone --recurse-submodules https://github.com
 
 <hr/>
 
-## Python
-[OOP](https://github.com/RMDircio/Udemy_Courses/tree/main/Python) <br>
+## **Python**
+<br>[OOP](https://github.com/RMDircio/Udemy_Courses/tree/main/Python) <br>
 an oop course
 
 <br>
