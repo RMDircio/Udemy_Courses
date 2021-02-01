@@ -17,10 +17,19 @@ To clone this repo use:<br> ```git clone --recurse-submodules https://github.com
 [OOP](https://github.com/RMDircio/Udemy_Courses/tree/main/Python) <br>
 an oop course
 
-<hr/>
+<br>
 
-[2021 - Python Bootcamp Zero to Hero]() <br>
+### 2021 - Python Bootcamp Zero to Hero <br>
 [Udemy Course Link](https://www.udemy.com/course/complete-python-bootcamp/) <br>
 [GitHub - Course Notebooks](https://github.com/Pierian-Data/Complete-Python-3-Bootcamp)
-<br>Instructor: Jose Portilla <br>
-_Learn Python like a Professional Start from the basics and go all the way to creating your own applications and games_
+<br>Instructor: Jose Portilla
+<br>_Learn Python like a Professional Start from the basics and go all the way to creating your own applications and games_
+
+<br>
+
+### Python and Flask Bootcamp: Create Websites using Flask!
+[Udemy Course Link](https://www.udemy.com/course/python-and-flask-bootcamp-create-websites-using-flask/)
+<br>[GitHub - Course Notes]()
+<br> [Google Slide - Lecture Slides](https://drive.google.com/drive/folders/1Wqcoqc_FNchzgfJXhiNA-nqH0AzduMzg)
+<br>Instructor: Jose Portilla
+<br>_Create awesome websites using the powerful Flask framework for Python!_
