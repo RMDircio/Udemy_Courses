@@ -31,5 +31,7 @@ an oop course
 [Udemy Course Link](https://www.udemy.com/course/python-and-flask-bootcamp-create-websites-using-flask/)
 <br> [Google Slide - Lecture Slides](https://drive.google.com/drive/folders/1Wqcoqc_FNchzgfJXhiNA-nqH0AzduMzg)
 <br> [HTML Reference](https://developer.mozilla.org/en-US/docs/Web/HTML)
+<br> [W3Schools - HTML Attributes]( http://www.w3schools.com/html/html_attributes.asp)
+<br> [Mozilla - HTML Attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes)
 <br>Instructor: Jose Portilla
 <br>_Create awesome websites using the powerful Flask framework for Python!_
