@@ -34,5 +34,7 @@ an oop course
 <br> [W3Schools - HTML Attributes]( http://www.w3schools.com/html/html_attributes.asp)
 <br> [Mozilla - HTML Attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes)
 <br> [Flask Beginner Projects](https://www.pythonistaplanet.com/wp-content/uploads/2020/03/flask-projects.jpg)
+<br> [W3Schools - Attributes Input Types](http://www.w3schools.com/TAGs/att_input_type.asp )
+<br> [Mozilla - Element Inputs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
 <br>Instructor: Jose Portilla
 <br>_Create awesome websites using the powerful Flask framework for Python!_
