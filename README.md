@@ -30,11 +30,16 @@ an oop course
 ### Python and Flask Bootcamp: Create Websites using Flask!
 [Udemy Course Link](https://www.udemy.com/course/python-and-flask-bootcamp-create-websites-using-flask/)
 <br> [Google Slide - Lecture Slides](https://drive.google.com/drive/folders/1Wqcoqc_FNchzgfJXhiNA-nqH0AzduMzg)
+<br>HTML Links:
 <br> [HTML Reference](https://developer.mozilla.org/en-US/docs/Web/HTML)
 <br> [W3Schools - HTML Attributes]( http://www.w3schools.com/html/html_attributes.asp)
 <br> [Mozilla - HTML Attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes)
 <br> [Flask Beginner Projects](https://www.pythonistaplanet.com/wp-content/uploads/2020/03/flask-projects.jpg)
 <br> [W3Schools - Attributes Input Types](http://www.w3schools.com/TAGs/att_input_type.asp )
 <br> [Mozilla - Element Inputs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
+<br> CSS Links:
+<br> [W3Schools - Selectors](http://www.w3schools.com/cssref/css_selectors.asp)
+<br> [Mozilla - Selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors)
+
 <br>Instructor: Jose Portilla
 <br>_Create awesome websites using the powerful Flask framework for Python!_
