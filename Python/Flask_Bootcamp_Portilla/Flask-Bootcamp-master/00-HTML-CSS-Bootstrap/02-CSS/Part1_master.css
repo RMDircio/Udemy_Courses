@@ -14,17 +14,17 @@ Selected Tag {
 /*Colors can be names, or codes*/
 
 h1{
-  color: blue;
+  color: blue; /* This affects the 1 Header */
 }
 
 li {
-  color: rgb(0,200,0);
+  color: rgb(0,200,0); /* This affects the Ordered List*/
 }
 
 p{
-  color: #000000;
+  color: #000000; /* This affects the Paragraph */
 }
 
 h4{
-  color: rgba(13,90,140,0.5)
+  color: rgba(13,90,140,0.5) /* This affects the 4 Header, 4th value here is alpha (transpanceny */
 }
