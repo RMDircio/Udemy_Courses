@@ -30,6 +30,7 @@ an oop course
 ### Python and Flask Bootcamp: Create Websites using Flask!
 [Udemy Course Link](https://www.udemy.com/course/python-and-flask-bootcamp-create-websites-using-flask/)
 <br> [Google Slide - Lecture Slides](https://drive.google.com/drive/folders/1Wqcoqc_FNchzgfJXhiNA-nqH0AzduMzg)
+
 <br>HTML Links:
 <br> [HTML Reference](https://developer.mozilla.org/en-US/docs/Web/HTML)
 <br> [W3Schools - HTML Attributes]( http://www.w3schools.com/html/html_attributes.asp)
@@ -37,10 +38,12 @@ an oop course
 <br> [Flask Beginner Projects](https://www.pythonistaplanet.com/wp-content/uploads/2020/03/flask-projects.jpg)
 <br> [W3Schools - Attributes Input Types](http://www.w3schools.com/TAGs/att_input_type.asp )
 <br> [Mozilla - Element Inputs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
+
 <br> CSS Links:
 <br> [W3Schools - Selectors](http://www.w3schools.com/cssref/css_selectors.asp)
 <br> [Mozilla - Selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors)
 <br> [W3Schools - Borders](https://www.w3schools.com/css/css_border.asp)
+
 <br> Font Links:
 <br> [Google's Font Library](fonts.google.com)
 <br> [Window's Included Fonts](https://en.wikipedia.org/wiki/List_of_typefaces_included_with_Microsoft_Windows)
