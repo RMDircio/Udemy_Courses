@@ -51,7 +51,8 @@ an oop course
 <br> [General Font Information](http://www.cssfontstack.com)
 
 <br> Bootstrap Links:
-<br> [Bootstrap](https://getbootstrap.com/) - Docs are helpful for boilerplate code
+<br> [Bootstrap](https://getbootstrap.com) - Docs are helpful for boilerplate code
+<br> [jQuery 3.x](http://code.jquery.com)
 
 <br>Instructor: Jose Portilla
 <br>_Create awesome websites using the powerful Flask framework for Python!_
