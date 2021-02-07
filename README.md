@@ -40,6 +40,11 @@ an oop course
 <br> CSS Links:
 <br> [W3Schools - Selectors](http://www.w3schools.com/cssref/css_selectors.asp)
 <br> [Mozilla - Selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors)
+<br> Font Links:
+<br> [Google's Font Library](fonts.google.com)
+<br> [Window's Included Fonts](https://en.wikipedia.org/wiki/List_of_typefaces_included_with_Microsoft_Windows)
+<br> [Mac's Included Fonts](https://en.wikipedia.org/wiki/List_of_typefaces_included_with_macOSfon)
+<br> [General Font Information](http://www.cssfontstack.com)
 
 <br>Instructor: Jose Portilla
 <br>_Create awesome websites using the powerful Flask framework for Python!_
