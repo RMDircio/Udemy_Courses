@@ -50,5 +50,8 @@ an oop course
 <br> [Mac's Included Fonts](https://en.wikipedia.org/wiki/List_of_typefaces_included_with_macOSfon)
 <br> [General Font Information](http://www.cssfontstack.com)
 
+<br> Bootstrap Links:
+<br> [Bootstrap](https://getbootstrap.com/) - Docs are helpful for boilerplate code
+
 <br>Instructor: Jose Portilla
 <br>_Create awesome websites using the powerful Flask framework for Python!_
