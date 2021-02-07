@@ -40,6 +40,7 @@ an oop course
 <br> CSS Links:
 <br> [W3Schools - Selectors](http://www.w3schools.com/cssref/css_selectors.asp)
 <br> [Mozilla - Selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors)
+<br> [W3Schools - Borders](https://www.w3schools.com/css/css_border.asp)
 <br> Font Links:
 <br> [Google's Font Library](fonts.google.com)
 <br> [Window's Included Fonts](https://en.wikipedia.org/wiki/List_of_typefaces_included_with_Microsoft_Windows)
