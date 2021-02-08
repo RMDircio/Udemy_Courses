@@ -242,7 +242,7 @@ print('Object 1: {a}, Object 2: {b}, Object 3: {c}'.format(a=1,b='two',c=12.3))
 
 
 # That is the basics of string formatting!
-# Often we'll use the simpler form with f-string literals (MUST USE PY 3.6 FOR THIS)
+# Often we'll use the simpler form with f-string literals (MUST USE PYTHON 3.6+ FOR THIS)
 username = "Jose"
 color = "Blue"
 print(f"The name is {username} and color is {color}")
