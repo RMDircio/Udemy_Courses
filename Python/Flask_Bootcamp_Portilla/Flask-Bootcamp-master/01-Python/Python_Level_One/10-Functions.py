@@ -1,11 +1,16 @@
 
+
 ### Functions
 #
-# Formally, a function is a useful device that groups together a set of statements so they can be run more than once. They can also let us specify parameters that can serve as inputs to the functions.
+# Formally, a function is a useful device that groups together a set of statements so they can be run more than once. 
+# They can also let us specify parameters that can serve as inputs to the functions.
 #
-# On a more fundamental level, functions allow us to not have to repeatedly write the same code again and again. If you remember back to the lessons on strings and lists, remember that we used a function len() to get the length of a string. Since checking the length of a sequence is a common task you would want to write a function that can do this repeatedly at command.
+# On a more fundamental level, functions allow us to not have to repeatedly write the same code again and again. 
+# If you remember back to the lessons on strings and lists, remember that we used a function len() to get the length of a string. 
+# Since checking the length of a sequence is a common task you would want to write a function that can do this repeatedly at command.
 #
-# Functions will be one of most basic levels of reusing code in Python, and it will also allow us to start thinking of program design (we will dive much deeper into the ideas of design when we learn about Object Oriented Programming).
+# Functions will be one of most basic levels of reusing code in Python, and it will also allow us to start thinking of program design 
+# (we will dive much deeper into the ideas of design when we learn about Object Oriented Programming).
 
 # ## The def Statement
 #
@@ -21,13 +26,18 @@ def lowercase_function_name(argument1,argument2,argument3='default value'):
     # After the docstring you write code that does stuff.
 
 
-# We begin with def then a space followed by the name of the function. Try to keep names relevant, for example len() is a good name for a length() function. Also be careful with names, you wouldn't want to call a function the same name as a built-in function in Python (such as len).
+# We begin with def then a space followed by the name of the function. Try to keep names relevant, for example len() is a good name for a length() function. 
+# Also be careful with names, you wouldn't want to call a function the same name as a built-in function in Python (such as len).
 #
-# Next come a pair of parenthesis with a number of arguments separated by a comma. These arguments are the inputs for your function. You'll be able to use these inputs in your function and reference them. After this you put a colon.
+# Next come a pair of parenthesis with a number of arguments separated by a comma. 
+# These arguments are the inputs for your function. You'll be able to use these inputs in your function and reference them. After this you put a colon.
 #
-# Now here is the important step, you must indent to begin the code inside your function correctly. Python makes use of whitespace to organize code. Lots of other programing languages do not do this, so keep that in mind.
+# Now here is the important step, you must indent to begin the code inside your function correctly. 
+# Python makes use of whitespace to organize code. Lots of other programing languages do not do this, so keep that in mind.
 #
-# Next you'll see the doc-string, this is where you write a basic description of the function. Using iPython and iPython Notebooks, you'll be able to read these doc-strings by pressing Shift+Tab after a function name. Doc strings are not necessary for simple functions, but its good practice to put them in so you or other people can easily understand the code you write.
+# Next you'll see the doc-string, this is where you write a basic description of the function. 
+# Using iPython and iPython Notebooks, you'll be able to read these doc-strings by pressing Shift+Tab after a function name. 
+# Doc strings are not necessary for simple functions, but its good practice to put them in so you or other people can easily understand the code you write.
 
 # ____
 #
@@ -86,7 +96,8 @@ report('Kay')
 
 
 # ## The return keyword
-# So far all of our functions have only been printing results, but what if we wanted to save the actual results of a function to another variable? How could we do this? Let's first see what happens with just print()
+# So far all of our functions have only been printing results, but what if we wanted to save the actual results of a function to another variable? 
+# How could we do this? Let's first see what happens with just print()
 
 
 def add(n1,n2):
