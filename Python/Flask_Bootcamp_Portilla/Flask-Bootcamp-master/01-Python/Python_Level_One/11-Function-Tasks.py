@@ -14,10 +14,10 @@
 ## a Boolean True if their sum is 10, False if their sum is something else.
 
 def check_ten(n1,n2):
-    # Code Here
-    pass
+    total = n1 + n2
+    return total == 10
 
-
+print(check_ten(5,5))
 
 # ## Task 2
 #
@@ -25,8 +25,13 @@ def check_ten(n1,n2):
 # sum is 10, otherwise, return the actual sum value.
 
 def check_ten_sum(n1,n2):
-    # Code Here
-    pass
+    total = n1 + n2
+    if total == 10:
+        return True
+    else:
+        return n1 + n2
+
+print(check_ten_sum(10, 10))
 
 
 
@@ -38,9 +43,9 @@ def check_ten_sum(n1,n2):
 
 
 def first_upper(mystring):
-    # Code Here
+    return mystring[0].upper()
 
-
+print(first_upper('pop'))
 
 # ## Task 4
 #
@@ -52,9 +57,13 @@ def first_upper(mystring):
 
 
 def last_two(mystring):
-    # Code Here
-    pass
+    ending = mystring[-2:]
+    if len(ending) < 2:
+        return "Error"
+    else:
+        return ending
 
+print(last_two('O'))
 
 # ## Task 5
 #
@@ -64,10 +73,13 @@ def last_two(mystring):
 
 
 def seq_check(nums):
+    for i in range(len(nums) -2):
+        if nums[i]==1 and nums[i+1]==2 and nums[i+2]==3:
+            return True
+        
+    return False 
 
-    # Code here
-
-    pass
+print(seq_check([5,6,4,7,1,2,3]))
 
 
 # ## Task 6
@@ -79,8 +91,9 @@ def seq_check(nums):
 
 
 def compare_len(s1,s2):
-    # Code Here
-    pass
+   return abs((len(s1) - len(s2))) 
+
+print(compare_len('hiphop', 'disco'))
 
 
 
@@ -93,6 +106,9 @@ def compare_len(s1,s2):
 
 
 def sum_or_max(mylist):
+    if len(mylist)%2 == 0:
+        return sum(mylist)
+    else:
+        return max(mylist)
 
-    # Code Here
-    pass
+print(sum_or_max([4,8,9,5,7,5,6,10,7,4,6,9,4,6]))
