@@ -127,11 +127,17 @@ frank = Dog(breed='Huskie')
 
 # Now we have created two instances of the Dog class. With two breed types, we
 # can then access these attributes like this:
+print('--------------------')
+print('--- Dog Class ---')
+print("What is Sam's breed? ->", sam.breed)
 
-sam.breed
+print("What is Franks's breed? ->", frank.breed)
 
-frank.breed
+print('What is the type of Sam? ->', type(sam))
 
+print("What is the type of Sam's breed? ->", type(sam.breed))
+
+print('--------------------')
 
 # Note how we don't have any parenthesis after breed, this is because it is an
 # attribute and doesn't take any arguments.
@@ -145,21 +151,24 @@ frank.breed
 class Dog():
 
     # Class Object Attribute
-    species = 'mammal'
+    species = 'Mammal'
 
     def __init__(self,breed,name):
         self.breed = breed
         self.name = name
 
-sam = Dog('Lab','Sam')
+sam = Dog('Lab','Samantha')
 
-sam.name
+print('--- Dog Class ---')
 
+print("What is Sam's name? ->", sam.name)
 
 # Note that the Class Object Attribute is defined outside of any methods in the
 # class. Also by convention, we place them first before the init.
 
-sam.species
+print("What is Sam's species? ->", sam.species)
+
+print('--------------------')
 
 ###################
 # Methods
