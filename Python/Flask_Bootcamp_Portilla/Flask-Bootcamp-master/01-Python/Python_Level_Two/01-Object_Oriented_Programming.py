@@ -148,7 +148,7 @@ print('--------------------')
 # breed,name, or other attributes will always be mammals.
 # We apply this logic in the following manner:
 
-class Dog():
+class Dog2():
 
     # Class Object Attribute
     species = 'Mammal'
@@ -157,9 +157,9 @@ class Dog():
         self.breed = breed
         self.name = name
 
-sam = Dog('Lab','Samantha')
+sam = Dog2('Lab','Samantha')
 
-print('--- Dog Class ---')
+print('--- Dog2 Class ---')
 
 print("What is Sam's name? ->", sam.name)
 
@@ -168,7 +168,7 @@ print("What is Sam's name? ->", sam.name)
 
 print("What is Sam's species? ->", sam.species)
 
-print('--------------------')
+print('----------------------')
 
 ###################
 # Methods
@@ -196,7 +196,7 @@ class Circle():
 
     # Area method calculates the area. Note the use of self.
     def area(self):
-        return self.radius * self.radius * Circle.pi
+        return self.radius * self.radius * self.pi
 
     # Method for resetting Radius
     def setRadius(self, radius):
@@ -205,16 +205,25 @@ class Circle():
     # Method for getting radius (Same as just calling .radius)
     def getRadius(self):
         return self.radius
+    
+    # Method for getting curcumfrence of the circle
+    def circumfrence(self):
+        return 2 * self.pi * self.radius
 
 
 c = Circle()
 
-c.setRadius(2)
-print('Radius is: ')
-print(c.getRadius())
-print('Area is: ')
-print(c.area())
+print('--- Circle Class ---')
 
+c.setRadius(2)
+
+print('Radius is: ', c.getRadius())
+
+print('Area is: ', c.area())
+
+print('Circumfrence is: ', c.circumfrence())
+
+print('----------------------')
 
 # Great! Notice how we used self. notation to reference attributes of the class
 # within the method calls. Review how the code above works and try creating your own method
@@ -244,10 +253,11 @@ class Animal():
         print("Eating")
 
 
-class Dog(Animal):
+class Dog3(Animal):
+    # if Animal Parent Class has params, they need to be entered here
     def __init__(self):
-        # Animal.__init__(self)
-        print("Dog created")
+        # Animal.__init__(self) # always will print 'Animal created' too
+        print("Dog created") # only print when Animal is created
 
     def report(self):
         print("Dog")
@@ -255,11 +265,32 @@ class Dog(Animal):
     def bark(self):
         print("Woof!")
 
-d = Dog()
+
+print('--- Animal Parent Class ---')
+
+a = Animal()
+print('What is it doing?...')
+a.eat()
+
+print('What is it?...')
+a.report()
+
+print('---')
+
+d = Dog3()
+
+# this OVERRIDES the Parent Class method of the same name
+print('What is it?...')
 d.report()
+
+# this is an inherited method from Parent Class
+print('What is it doing?...') 
 d.eat()
+
+print('What did it say?...')
 d.bark()
 
+print('--------------------')
 
 # In this example, we have two classes: Animal and Dog. The Animal is the base
 # class, the Dog is the derived class.
