@@ -313,21 +313,25 @@ print('--------------------')
 
 class Book():
     def __init__(self, title, author, pages):
-        print("A book is created")
+        print("A book is created") # will print at each instance
         self.title = title
         self.author = author
         self.pages = pages
 
+    # what is the representation of this object when printed?
     def __repr__(self):
         # Notice how this is return, NOT print()
-        return f"Title:{self.title} , author:{self.author}, pages:{self.pages}"
+        return f"Title: {self.title}, Author: {self.author}, Pages: {self.pages}"
 
+    # a way to create our own version of the length function
+    # we can still use 'len()' as normal
     def __len__(self):
         return self.pages
 
+print('--- Book Class ---')
 
 book = Book("Python Rocks!", "Jose Portilla", 159)
 
 #Special Methods
 print(book)
-print(len(book))
+print('How many pages are there? ->' , len(book)) # special length function we made
