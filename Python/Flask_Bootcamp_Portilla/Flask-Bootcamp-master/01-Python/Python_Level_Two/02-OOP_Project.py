@@ -27,10 +27,19 @@ class Account:
   def __init__(self, owner, balance):
     self.owner = owner
     self.balance = balance
+    
     self.record = [(self.owner, self.balance)]
-    print(f'Account Created for {self.owner}')
+    # print(f'Account Created for {self.owner}')
+    # repr or str would be better here
+  
+  def __repr__(self):
+    return f'Account Owner: {self.owner}\nAccount Balance: ${self.balance}'
+
 
   def deposit(self, amount):
+    # another way Jose's
+    # self.balance += dep_amt
+
     new_bal = self.balance + amount
     self.balance = new_bal
     self.record.append(('Deposit', amount))
@@ -38,6 +47,10 @@ class Account:
     print(f'New balance for {self.owner} is ${new_bal}')
 
   def withdraw(self, amount):
+    # another way Jose's
+    # if self.balance >= wd_amt:
+      # self.balance -= wd_amt
+
     # if statement to see if funds are available
     difference = self.balance - amount
     if amount > self.balance:
