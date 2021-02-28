@@ -54,5 +54,16 @@ an oop course
 <br> [Bootstrap](https://getbootstrap.com) - Docs are helpful for boilerplate code
 <br> [jQuery 3.x](http://code.jquery.com)
 
+<br> Python Shell:
+<br> The color of the output can be changed by using [Colorama](https://pypi.org/project/colorama/) and the following
+```python 
+from colorama import init
+init()
+from colorama import Fore
+print(Fore.GREEN + 'Changes text to green :) )
+```
+<br> Module Links:
+<br> [Python.org - Modules]( https://docs.python.org/3/tutorial/modules.html)
+
 <br>Instructor: Jose Portilla
 <br>_Create awesome websites using the powerful Flask framework for Python!_
