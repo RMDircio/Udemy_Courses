@@ -1,61 +1,61 @@
-###################
-### Decorators ####
-###################
-#
-# Decorators can be thought of as functions which modify the "functionality" of
-# another function. They help to make your code shorter and more "Pythonic".
-# They are also used a lot in Python Web Frameworks, which is why we need to learn
-# them.
+# ###################
+# ### Decorators ####
+# ###################
+# #
+# # Decorators can be thought of as functions which modify the "functionality" of
+# # another function. They help to make your code shorter and more "Pythonic".
+# # They are also used a lot in Python Web Frameworks, which is why we need to learn
+# # them.
 
-# To properly explain decorators we will slowly build up from functions.
-# So lets break down the steps:
-#
-###################
-# Functions Review
-###################
+# # To properly explain decorators we will slowly build up from functions.
+# # So lets break down the steps:
+# #
+# ###################
+# # Functions Review
+# ###################
 
-def func():
-    return 1
+# def func():
+#     return 1
 
-func()
+# print(func())
 
-###################
-# Scope Review
-###################
+# ###################
+# # Scope Review
+# ###################
 
-# Remember from the nested statements lecture that Python uses Scope to know what
-# a label is referring to.
-# For example:
+# # Remember from the nested statements lecture that Python uses Scope to know what
+# # a label is referring to.
+# # For example:
 
-s = 'Global Variable'
+# s = 'Global Variable'
 
-def func():
-    print(locals())
-
-
-# Remember that Python functions create a new scope, meaning the function has
-# its own namespace to find variable names when they are mentioned within the
-# function. We can check for local variables and global variables with the local()
-# and globals() functions.
-
-# For example:
-print(globals())
+# def func():
+#     print(locals())
 
 
-# Here we get back a dictionary of all the global variables, many of them are
-# predefined in Python. So let's go ahead and look at the keys:
+# # Remember that Python functions create a new scope, meaning the function has
+# # its own namespace to find variable names when they are mentioned within the
+# # function. We can check for local variables and global variables with the local()
+# # and globals() functions.
 
-print(globals().keys())
-
-
-# Note how "s" is there, the Global Variable we defined as a string:
-
-globals()['s']
+# # For example:
+# print(globals())
 
 
-# Now lets run our function to check for any local variables in the func()
-# (there shouldn't be any)
-func()
+# # Here we get back a dictionary of all the global variables, many of them are
+# # predefined in Python. So let's go ahead and look at the keys:
+
+# print(globals().keys())
+
+
+# # Note how "s" is there, the Global Variable we defined as a string:
+
+# globals()['s']
+
+
+# # Now lets run our function to check for any local variables in the func()
+# # (there shouldn't be any)
+# func()
 
 
 # Great! Now lets continue with building out the logic of what a decorator is.
@@ -66,10 +66,10 @@ func()
 def hello(name='Jose'):
     return 'Hello '+name
 
-hello()
+print(hello())
 
 
-# Assign a label to the function.  Note that e are not using parentheses here
+# Assign a label to the function.  Note that we are not using parentheses here
 # because we are not calling the function hello, instead we are just putting
 # it into the greet variable.
 
@@ -80,23 +80,24 @@ greet
 greet()
 
 
-# This assignment is not attached to the original function:
+# # This assignment is not attached to the original function:
 
-del hello
+# del hello
 
-hello()
+# hello()
 
-greet()
+# greet()
 
 ######################################
 # Functions within functions
 ######################################
 
+
 # Great! So we've seen how we can treat functions as objects, now lets see how
 # we can define functions inside of other functions:
 
-def hello(name='Jose'):
-    print 'The hello() function has been executed'
+def hello2(name='Jose'):
+    print ('The hello() function has been executed')
 
     def greet():
         return '\t This is inside the greet() function'
@@ -108,9 +109,9 @@ def hello(name='Jose'):
     print(welcome())
     print("Now we are back inside the hello() function")
 
-hello()
+print(hello2())
 # Uh oh!
-welcome()
+# welcome()
 
 
 # Note how due to scope, the welcome() function is not defined outside of the
@@ -120,7 +121,7 @@ welcome()
 # Returning Functions
 ######################################
 
-def hello(name='Jose'):
+def hello3(name='Jose'):
 
     def greet():
         return '\t This is inside the greet() function'
@@ -133,17 +134,22 @@ def hello(name='Jose'):
     else:
         return welcome
 
-x = hello()
+x = hello3()
 
 
 # Now lets see what function is returned if we set x = hello(), note how the
 # closed parenthesis means that name has been defined as Jose.
-x
+print(x)
 
 # Great! Now we can see how x is pointing to the greet function inside of the
 # hello function.
 print(x())
 
+# try another name
+s = hello3(name='Sammy')
+print('-------------------')
+print('Trying a new name here:')
+print(s())
 
 # Lets take a quick look at the code again.
 #
@@ -164,14 +170,14 @@ print(x())
 
 # Now lets see how we can pass functions as arguments into other functions:
 
-def hello():
-    return 'Hi Jose!'
+def hello4():
+    return 'Hi Jose!' # this runs second
 
 def other(func):
-    print 'Other code would go here'
-    print func()
+    print ('Other code would go here')  # this runs first
+    print (func())
 
-other(hello)
+other(hello4)
 
 
 # Great! Note how we can pass the functions as objects and then use them within
@@ -187,16 +193,16 @@ other(hello)
 def new_decorator(func):
 
     def wrap_func():
-        print "Code would be here, before executing the func"
+        print ("Code would be here, before executing the func")
 
         func()
 
-        print "Code here will execute after the func()"
+        print ("Code here will execute after the func()")
 
     return wrap_func
 
 def func_needs_decorator():
-    print "This function is in need of a Decorator"
+    print ("This function is in need of a Decorator")
 
 func_needs_decorator()
 
@@ -211,8 +217,8 @@ func_needs_decorator()
 # the @ symbol, which is what Python uses for Decorators:
 
 @new_decorator
-def func_needs_decorator():
-    print "This function is in need of a Decorator"
+def func_needs_decorator2():
+    print ("This function is in need of a Decorator")
 
 func_needs_decorator()
 
