@@ -13,6 +13,8 @@ def info():
 def puppy(name):
     # Page for an individual puppy.
     return '<h1>This is a page for {}<h1>'.format(name)
+    # change the format of the input string
+    # return '<h1>This is a page for {}<h1>'.format(name.upper())
 
 if __name__ == '__main__':
     app.run()
