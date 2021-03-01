@@ -54,6 +54,9 @@ an oop course
 <br> [Bootstrap](https://getbootstrap.com) - Docs are helpful for boilerplate code
 <br> [jQuery 3.x](http://code.jquery.com)
 
+<br> HTML and CSS
+<br> [Medium - 7 Projects](https://medium.com/@avicndugu/projects-to-practice-html-css-skills-for-beginners-8b9ed67a7dd1) More projects in the comments section
+
 <br> Python Shell:
 <br> The color of the output can be changed by using [Colorama](https://pypi.org/project/colorama/) and the following
 ```python 
