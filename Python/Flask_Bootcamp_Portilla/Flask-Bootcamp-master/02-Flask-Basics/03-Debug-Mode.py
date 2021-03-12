@@ -12,7 +12,9 @@ def info():
 @app.route('/puppy/<name>')
 def puppy(name):
     # Page for an individual puppy.
-    return '<h1>This is a page for {}</h1>'.format(name)
+    # return '<h1>This is a page for {}</h1>'.format(name)
+    # error sample
+    return '100th letter: {}'.format(name[100])
 
 if __name__ == '__main__':
     # Never have debug=True for production apps!
