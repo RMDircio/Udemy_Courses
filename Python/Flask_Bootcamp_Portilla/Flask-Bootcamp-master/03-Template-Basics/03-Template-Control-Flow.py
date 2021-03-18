@@ -1,6 +1,7 @@
 from flask import Flask, render_template
 app = Flask(__name__)
 
+# unordered Lists with a for loop
 
 @app.route('/')
 def index():
@@ -8,7 +9,6 @@ def index():
     puppies = ['Muffin', 'Niki', 'Walter']
     return render_template('03-Template-Control-Flow.html',
                            puppies=puppies)
-
 
 
 if __name__ == '__main__':
