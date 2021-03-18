@@ -68,5 +68,8 @@ print(Fore.GREEN + 'Changes text to green :) )
 <br> Module Links:
 <br> [Python.org - Modules]( https://docs.python.org/3/tutorial/modules.html)
 
+<br> Template Links:
+<br> [Jinja Filters for Flask](https://www.webforefront.com/django/usebuiltinjinjafilters.html)
+
 <br>Instructor: Jose Portilla
 <br>_Create awesome websites using the powerful Flask framework for Python!_
