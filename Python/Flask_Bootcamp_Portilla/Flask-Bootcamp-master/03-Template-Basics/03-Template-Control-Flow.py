@@ -4,7 +4,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    puppies = ['Fluffy','Rufus','Spike']
+    # puppies = ['Fluffy','Rufus','Spike']
+    puppies = ['Muffin', 'Niki', 'Walter']
     return render_template('03-Template-Control-Flow.html',
                            puppies=puppies)
 

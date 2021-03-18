@@ -6,12 +6,15 @@
   </head>
   <body>
     <p>Here we use a for loop for a list</p>
+
     <ul>
       {% for pup in puppies %}
       <li>{{pup}}</li>
       {% endfor %}
     </ul>
+
     <p>We can also add if/else statements</p>
+    
     {% if 'Rufus' in puppies %}
       <p>Found you in the list of puppies Rufus!</p>
     {% else %}
