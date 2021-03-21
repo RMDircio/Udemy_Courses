@@ -41,7 +41,6 @@ def report():
             end_number = True
     
 
-
     # Check if all are True.
     report = lower and upper and end_number 
    
