@@ -1,0 +1,18 @@
+{% extends '07-exam-base.html'%}
+{% block content %}
+<div style="padding-left:16px"
+    class="jumbotron">
+    <p>Username must include all of the following:</p>
+    <ul>
+        <li>At least one <em>lowercase</em> letter</li>
+        <li>At least one <em>uppercase</em> letter</li>
+        <li>End with a <em>number</em></li>
+    </ul>
+   
+    <form action="/report">
+        <label for="username">Username:</label>
+        <input type="text" name="username"><br><br>
+        <input type="submit" value="Check">
+    </form> 
+</div>
+{% endblock %}
