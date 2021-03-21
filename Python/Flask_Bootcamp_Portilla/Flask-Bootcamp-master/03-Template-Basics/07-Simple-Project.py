@@ -40,8 +40,7 @@ def report():
         if letter[-1].isdigit():
             end_number = True
     
-    # if username[-1] == username[-1].isdigit():
-    #     end_number = True
+
 
     # Check if all are True.
     report = lower and upper and end_number 
