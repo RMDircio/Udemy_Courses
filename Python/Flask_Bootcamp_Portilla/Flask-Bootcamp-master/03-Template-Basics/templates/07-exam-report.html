@@ -1,0 +1,41 @@
+<!-- Rules 
+1. Username must contain a lowercase letter
+    2. Username must contain an uppercase letter
+    3. Username must end in a number -->
+
+{% extends '07-exam-base.html'%}
+{% block content %}
+    <div style="padding-left:16px"
+        class="jumbotron">
+
+        <p>Let see how you performed!!</p>
+        {# Recall that report is a boolean #}
+        <!-- If all the conditions are True -->
+        {% if report%}
+            <p>Your UserName passed the 3 requirements!</p>
+        <!-- Hint for each requirement -->
+        {% else %}
+            <p>Oh no! Looks like you had issues with your username!</p>
+            <p>Here are the requirements you failed:</p>
+        <ul> 
+            <!-- These will be list items -->
+            
+            <!-- Name is not lower -->
+            {% if not lower %}
+            <li>You did not use a lowercase character.</li>
+            {% endif %}
+            <!-- name is  not upper -->
+            {% if not upper %}
+            <li>You did not use an uppercase character.</li>
+            {% endif %}
+            <!-- Name does not end with number -->
+            {% if not num_end %}
+            <li>You did not end your username with a number.</li>
+            <!-- end inner if statement -->
+            {% endif %}
+
+        </ul>
+        <!-- end the main if statement -->
+        {% endif %}
+</div>
+{% endblock %}
