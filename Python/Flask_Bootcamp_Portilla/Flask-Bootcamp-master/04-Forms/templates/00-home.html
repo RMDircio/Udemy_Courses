@@ -1,15 +1,23 @@
 <p>
+  <!-- If statement to see if user has entered text -->
+  <!-- If the breed variable has a value -->
 {% if breed %}
   The breed you entered is {{breed}}.
   You can update it in the form below:
+
+  <!-- If the breed variable does NOT have a value -->
 {% else %}
   Please enter your breed in the form below:
+
 {% endif %}
 </p>
 
+<!-- Form to be filled out -->
 <form method="POST">
     {# This hidden_tag is a CSRF security feature. #}
     {{ form.hidden_tag() }}
+    <!-- breed used here is the class attribute -->
+    <!-- Using class here helps with styling -->
     {{ form.breed.label }} {{ form.breed(class='some-css-class') }}
     {{ form.submit() }}
 </form>
