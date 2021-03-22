@@ -12,6 +12,7 @@ To clone this repo use:<br> ```git clone --recurse-submodules https://github.com
 ```git push``` <--- cements updates in our repo
 
 <hr/>
+<hr/>
 
 ## **Python**
 <br>[OOP](https://github.com/RMDircio/Udemy_Courses/tree/main/Python) <br>
@@ -21,28 +22,30 @@ an oop course
 
 ### 2021 - Python Bootcamp Zero to Hero <br>
 [Udemy Course Link](https://www.udemy.com/course/complete-python-bootcamp/) <br>
-[GitHub - Course Notebooks](https://github.com/Pierian-Data/Complete-Python-3-Bootcamp)
+[GitHub](https://github.com/Pierian-Data/Complete-Python-3-Bootcamp) - Course Notebooks
 <br>Instructor: Jose Portilla
 <br>_Learn Python like a Professional Start from the basics and go all the way to creating your own applications and games_
 
 <br>
+<hr/>
+<br>
 
 ### Python and Flask Bootcamp: Create Websites using Flask!
 [Udemy Course Link](https://www.udemy.com/course/python-and-flask-bootcamp-create-websites-using-flask/)
-<br> [Google Slide - Lecture Slides](https://drive.google.com/drive/folders/1Wqcoqc_FNchzgfJXhiNA-nqH0AzduMzg)
+<br> [Google Slide](https://drive.google.com/drive/folders/1Wqcoqc_FNchzgfJXhiNA-nqH0AzduMzg)- Lecture Slides
 
 <br>HTML Links:
 <br> [HTML Reference](https://developer.mozilla.org/en-US/docs/Web/HTML)
-<br> [W3Schools - HTML Attributes]( http://www.w3schools.com/html/html_attributes.asp)
-<br> [Mozilla - HTML Attributes](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes)
+<br> [W3Schools]( http://www.w3schools.com/html/html_attributes.asp) - HTML Attributes
+<br> [Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes) - HTML Attributes
 <br> [Flask Beginner Projects](https://www.pythonistaplanet.com/wp-content/uploads/2020/03/flask-projects.jpg)
-<br> [W3Schools - Attributes Input Types](http://www.w3schools.com/TAGs/att_input_type.asp )
-<br> [Mozilla - Element Inputs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input)
+<br> [W3Schools](http://www.w3schools.com/TAGs/att_input_type.asp) - Attributes Input Types
+<br> [Mozilla](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) - Element Inputs
 
 <br> CSS Links:
-<br> [W3Schools - Selectors](http://www.w3schools.com/cssref/css_selectors.asp)
-<br> [Mozilla - Selectors](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors)
-<br> [W3Schools - Borders](https://www.w3schools.com/css/css_border.asp)
+<br> [W3Schools](http://www.w3schools.com/cssref/css_selectors.asp) - Selectors
+<br> [Mozilla](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors) - Selectors
+<br> [W3Schools](https://www.w3schools.com/css/css_border.asp) - Borders
 
 <br> Font Links:
 <br> [Google's Font Library](fonts.google.com)
@@ -66,10 +69,13 @@ from colorama import Fore
 print(Fore.GREEN + 'Changes text to green :) )
 ```
 <br> Module Links:
-<br> [Python.org - Modules]( https://docs.python.org/3/tutorial/modules.html)
+<br> [Python.org]( https://docs.python.org/3/tutorial/modules.html) - Modules
 
 <br> Template Links:
 <br> [Jinja Filters for Flask](https://www.webforefront.com/django/usebuiltinjinjafilters.html)
+
+<br> HTML WTForms:
+<br> [WTForms](https://wtforms.readthedocs.io/en/2.3.x/fields/) - Documentation
 
 <br>Instructor: Jose Portilla
 <br>_Create awesome websites using the powerful Flask framework for Python!_
