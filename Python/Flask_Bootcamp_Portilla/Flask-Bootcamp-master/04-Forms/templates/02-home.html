@@ -1,4 +1,5 @@
 <head>
+  <!-- From Bootstrap main page, on the bottom, Stylesheet+CSS+Jquery+JS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -13,6 +14,7 @@ https://getbootstrap.com/docs/4.0/components/alerts/#dismissing #}
 
 
   {# get_flashed_messages() is auto sent to the template with the flash() call #}
+      <!-- For loop for the flash alert-->
       {% for mess in get_flashed_messages()  %}
       <div class="alert alert-warning alert-dismissible fade show" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close" class="fade close">
@@ -22,7 +24,7 @@ https://getbootstrap.com/docs/4.0/components/alerts/#dismissing #}
         </div>
       {% endfor %}
 
-
+<!-- Actual Form -->
 <form method="POST">
     {# This hidden_tag is a CSRF security feature. #}
     {{ form.hidden_tag() }}
