@@ -18,10 +18,14 @@ class SimpleForm(FlaskForm):
 def index():
     form = SimpleForm()
 
+    # if the button is pushed
     if form.validate_on_submit():
         flash("You just clicked the button!")
-
+        
+        # After the button is clicked, send the user to the index page
         return redirect(url_for('index'))
+    
+    # Before the button is pushed 
     return render_template('02-home.html', form=form)
 
 
