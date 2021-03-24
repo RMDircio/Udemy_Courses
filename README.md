@@ -77,5 +77,9 @@ print(Fore.GREEN + 'Changes text to green :) )
 <br> HTML WTForms:
 <br> [WTForms](https://wtforms.readthedocs.io/en/2.3.x/fields/) - Documentation
 
+<br> SQL Links:
+<br> [Raw SQL in SQLAlchemy](https://chartio.com/resources/tutorials/how-to-execute-raw-sql-in-sqlalchemy/) Tutorial
+
+
 <br>Instructor: Jose Portilla
 <br>_Create awesome websites using the powerful Flask framework for Python!_
