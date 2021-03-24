@@ -26,23 +26,29 @@ class Puppy(db.Model):
     name = db.Column(db.Text)
     # This is a one-to-many relationship
     # A puppy can have many toys
+    # parameters --> ('WhichModel', backref= 'OtherRelatedModel', lazy= 'UseaQuerytoLoad'   )
     toys = db.relationship('Toy',backref='puppy',lazy='dynamic')
+
     # This is a one-to-one relationship
-    # A puppy only has one owner, thus uselist is False.
+    # A puppy only has one owner, thus uselist is False. Don't want a list of owners, default is True
     # Strong assumption of 1 dog per 1 owner and vice versa.
     owner = db.relationship('Owner',backref='puppy',uselist=False)
 
+    # this helps add new rows
     def __init__(self,name):
         # Note how a puppy only needs to be initalized with a name!
         self.name = name
 
-
+    # representation
     def __repr__(self):
+        # if the puppy has an owner (True)
         if self.owner:
             return f"Puppy name is {self.name} and owner is {self.owner.name}"
+        # owner is False
         else:
             return f"Puppy name is {self.name} and has no owner assigned yet."
-
+    
+    # Function to show what toys a puppy has
     def report_toys(self):
         print("Here are my toys!")
         for toy in self.toys:
