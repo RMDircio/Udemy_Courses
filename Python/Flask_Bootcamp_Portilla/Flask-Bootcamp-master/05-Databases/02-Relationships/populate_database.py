@@ -21,9 +21,11 @@ print(Puppy.query.all())
 rufus = Puppy.query.filter_by(name='Rufus').all()[0]
 
 # Create an owner to Rufus
+# parameters ('Owner', DogName.id)
 jose = Owner("Jose",rufus.id)
 
 # Give some Toys to Rufus
+# parameters ('ToyName', DogName.id)
 toy1 = Toy('Chew Toy',rufus.id)
 toy2 = Toy("Ball",rufus.id)
 
@@ -36,7 +38,7 @@ rufus = Puppy.query.filter_by(name='Rufus').first()
 print(rufus)
 
 # Show toys
-print(rufus.report_toys())
+rufus.report_toys()
 
 # You can also delete things from the database:
 # find_pup = Puppy.query.get(1)
