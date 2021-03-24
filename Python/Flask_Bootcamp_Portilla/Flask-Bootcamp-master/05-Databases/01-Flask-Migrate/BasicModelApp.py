@@ -17,6 +17,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
 # Add on migration capabilities in order to run terminal commands
+# (appication, database)
 Migrate(app,db)
 
 #####################################
