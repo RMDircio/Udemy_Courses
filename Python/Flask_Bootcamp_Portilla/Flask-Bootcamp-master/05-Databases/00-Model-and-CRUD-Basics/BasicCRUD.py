@@ -23,15 +23,19 @@ db.session.commit()
 all_puppies = Puppy.query.all() # list of all puppies in table
 print(all_puppies)
 print('\n')
+
 # Grab by id
 puppy_one = Puppy.query.get(1)
 print(puppy_one)
 print(puppy_one.age)
 print('\n')
-# Filters
+
+# Filters - this will produce SQL code
 puppy_sam = Puppy.query.filter_by(name='Sammy') # Returns list
 print(puppy_sam)
+print(puppy_sam.all()) # gets all the rows that have Sam as the name
 print('\n')
+
 ###########################
 ###### UPDATE ############
 #########################
