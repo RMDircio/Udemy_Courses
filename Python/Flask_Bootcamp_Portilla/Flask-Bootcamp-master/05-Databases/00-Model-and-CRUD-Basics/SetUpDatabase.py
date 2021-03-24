@@ -11,6 +11,7 @@
 from BasicModelApp import db, Puppy
 
 # Create the tables in the database
+# Model --> DB table
 # (Usually won't do it this way!)
 db.create_all()
 
