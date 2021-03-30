@@ -15,6 +15,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'da
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
+# connect the app to the database
 Migrate(app,db)
 
 
@@ -26,7 +27,7 @@ class Puppy(db.Model):
     name = db.Column(db.Text)
     # This is a one-to-many relationship
     # A puppy can have many toys
-    # parameters --> ('WhichModel', backref= 'OtherRelatedModel', lazy= 'UseaQuerytoLoad'   )
+    # parameters --> ('WhichModel', backref= 'OtherRelatedModel', lazy= 'UseaQuerytoLoad')
     toys = db.relationship('Toy',backref='puppy',lazy='dynamic')
 
     # This is a one-to-one relationship
@@ -63,7 +64,7 @@ class Toy(db.Model):
     item_name = db.Column(db.Text)
     # Connect the toy to the puppy that owns it.
     # We use puppies.id because __tablename__='puppies'
-    puppy_id = db.Column(db.Integer,db.ForeignKey('puppies.id'))
+    puppy_id = db.Column(db.Integer, db.ForeignKey('puppies.id'))
 
     def __init__(self,item_name,puppy_id):
         self.item_name = item_name
@@ -77,8 +78,25 @@ class Owner(db.Model):
     id = db.Column(db.Integer,primary_key= True)
     name = db.Column(db.Text)
     # We use puppies.id because __tablename__='puppies'
-    puppy_id = db.Column(db.Integer,db.ForeignKey('puppies.id'))
+    puppy_id = db.Column(db.Integer, db.ForeignKey('puppies.id'))
 
     def __init__(self,name,puppy_id):
         self.name = name
         self.puppy_id = puppy_id
+
+
+'''
+After setting up the classes run the following in the termial to set up the FLASK APP and Migrate correctly:
+
+Set(Windows)/Export(Linux-Mac)
+- export FLASK_APP=models.py
+
+Create the database, migrations folder will be created
+- flask db init
+
+Set up the migrations
+- flask db migrate -m 'Initial Migration'
+
+Submit/Connect everything
+- flask db upgrade
+'''
