@@ -11,6 +11,10 @@ To clone this repo use:<br> ```git clone --recurse-submodules https://github.com
 ```git status``` <--- sanity check<br>
 ```git push``` <--- cements updates in our repo
 
+**Update the submodules CHILD to PARENT**
+<br> ```git submodule init```
+<br> ```git submodule update```
+
 <hr/>
 <hr/>
 
