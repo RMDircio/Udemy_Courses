@@ -4,3 +4,6 @@
 [submodule "Python/Python_for_Beginners_Yassin_Marco"]
 	path = Python/Python_for_Beginners_Yassin_Marco
 	url = git@github.com:RMDircio/Python_for_Beginners_Yassin_Marco.git
+[submodule "Python/PostgresSQL_with_Python"]
+	path = Python/PostgresSQL_with_Python
+	url = https://github.com/RMDircio/PostgresSQL_with_Python
