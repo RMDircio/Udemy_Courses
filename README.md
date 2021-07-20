@@ -11,6 +11,10 @@ To clone this repo use:<br> ```git clone --recurse-submodules https://github.com
 ```git status``` <--- sanity check<br>
 ```git push``` <--- cements updates in our repo
 
+**Update the submodules CHILD to PARENT**
+<br> ```git submodule init```
+<br> ```git submodule update```
+
 <hr/>
 <hr/>
 
@@ -83,3 +87,10 @@ print(Fore.GREEN + 'Changes text to green :) )
 
 <br>Instructor: Jose Portilla
 <br>_Create awesome websites using the powerful Flask framework for Python!_
+
+<br>
+<hr/>
+<br>
+
+### The Complete SQL Bootcamp 2021: Go from Zero to Hero
+[Udemy Course Link](https://www.udemy.com/course/the-complete-sql-bootcamp/)
