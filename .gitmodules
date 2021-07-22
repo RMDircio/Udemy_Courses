@@ -10,3 +10,6 @@
 [submodule "Python/Python_Data_Structures_Algorithms_Interviews_Portilla"]
 	path = Python/Python_Data_Structures_Algorithms_Interviews_Portilla
 	url = git@github.com:RMDircio/Python_Data_Structures_Algorithms_Interviews_Portilla.git
+[submodule "Python/Python-for-Algorithms--Data-Structures--and-Interviews"]
+	path = Python/Python-for-Algorithms--Data-Structures--and-Interviews
+	url = git@github.com:RMDircio/Python-for-Algorithms--Data-Structures--and-Interviews.git
